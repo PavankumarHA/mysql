@@ -1,0 +1,1047 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+PS C:\Users\HP> pwd
+
+Path
+----
+C:\Users\HP     
+
+
+PS C:\Users\HP> ls
+
+
+    Directory: C:\Users\HP
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/16/2022   4:58 PM                .vscode
+d-r---         5/16/2022   3:56 PM                3D Objects
+d-r---         5/16/2022   3:56 PM                Contacts
+d-r---         6/17/2022   2:42 PM                Desktop
+d-r---         6/10/2022   3:44 PM                Documents
+d-r---         6/16/2022   4:58 PM                Downloads
+d-r---         5/16/2022   3:56 PM                Favorites
+d-r---         5/16/2022   3:56 PM                Links
+d-r---         6/10/2022   3:45 PM                Music
+d-r---         6/10/2022   3:42 PM                OneDrive
+d-r---         5/16/2022   3:56 PM                Saved Games
+d-r---         5/16/2022   3:58 PM                Searches
+d-----         6/17/2022   8:18 AM                test
+d-r---         6/13/2022   1:21 PM                Videos
+-a----         6/17/2022   2:08 PM            716 .bash_history
+-a----         6/17/2022   1:13 PM             52 .gitconfig
+-a----         6/17/2022   1:24 PM             20 .lesshst
+
+
+PS C:\Users\HP> cd Destop
+cd : Cannot find path 'C:\Users\HP\Destop' because it does not exist.
+At line:1 char:1
++ cd Destop
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Destop:String) [Set-Location], ItemNotFoundException
+ 
+PS C:\Users\HP> Desktop
+Desktop : The term 'Desktop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included,        
+verify that the path is correct and try again.
+At line:1 char:1
++ Desktop
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\HP> pwd
+
+Path
+----
+C:\Users\HP
+
+PS C:\Users\HP> cd
+PS C:\Users\HP> /../pp
+/../pp : The term '/../pp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify   
+that the path is correct and try again.
+At line:1 char:1
++ /../pp
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (/../pp:String) [], CommandNotFoundException
+PS C:\Users\HP> ls
+
+
+    Directory: C:\Users\HP
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/16/2022   4:58 PM                .vscode
+d-r---         5/16/2022   3:56 PM                3D Objects
+d-r---         5/16/2022   3:56 PM                Contacts
+d-r---         6/17/2022   2:42 PM                Desktop
+d-r---         6/10/2022   3:44 PM                Documents
+d-r---         6/16/2022   4:58 PM                Downloads
+d-r---         5/16/2022   3:56 PM                Favorites
+d-r---         5/16/2022   3:56 PM                Links
+d-r---         6/10/2022   3:45 PM                Music
+d-r---         6/10/2022   3:42 PM                OneDrive
+d-r---         6/13/2022   1:21 PM                Videos
+-a----         6/17/2022   2:08 PM            716 .bash_history
+-a----         6/17/2022   1:13 PM             52 .gitconfig
+-a----         6/17/2022   1:24 PM             20 .lesshst
+-a----         6/16/2022  10:08 PM            781 .node_repl_history
+
+
+PS C:\Users\HP> cd downloads
+PS C:\Users\HP\downloads> cd ..    
+PS C:\Users\HP> cd Desktop
+PS C:\Users\HP\Desktop> ls
+
+
+    Directory: C:\Users\HP\Desktop
+
+----                 -------------         ------ ----
+d-----         6/17/2022   1:29 PM                pavan
+d-----         6/17/2022   3:54 PM                pp
+-a----         6/17/2022   2:42 PM             31 appp.js
+-a----         6/16/2022  11:01 AM           2188 Slack.lnk
+-a----         6/16/2022   8:48 PM             80 test1.js
+-a----         6/16/2022   4:58 PM           1391 Visual Studio Code.lnk
+
+
+PS C:\Users\HP\Desktop> cd pp
+PS C:\Users\HP\Desktop\pp> ls
+
+    Directory: C:\Users\HP\Desktop\pp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/17/2022   2:43 PM             31 appp.js
+-a----         6/17/2022   2:51 PM             35 print.js
+
+
+PS C:\Users\HP\Desktop\pp> cd yulu.js
+cd : Cannot find path 'yulu.js' because it does not exist.
+At line:1 char:1
++ cd yulu.js
++ ~~~~~~~~~~
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+PS C:\Users\HP\Desktop\pp> cd pp
+At line:1 char:1
++ cd pp
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pp\pp:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pp> git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> ls      
+
+    Directory: C:\Users\HP\Desktop\pp
+
+----                 -------------         ------ ----
+
+PS C:\Users\HP\Desktop\pp> git add yulu.js
+PS C:\Users\HP\Desktop\pp> git add .      
+PS C:\Users\HP\Desktop\pp> git add appp.js
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> cd ..
+PS C:\Users\HP\Desktop> cd pp
+PS C:\Users\HP\Desktop\pp> git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> git branch
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> git init
+Initialized empty Git repository in C:/Users/HP/Desktop/pp/.git/
+PS C:\Users\HP\Desktop\pp> ls
+
+
+----                 -------------         ------ ----
+-a----         6/17/2022   2:43 PM             31 appp.js
+-a----         6/17/2022   2:51 PM             35 print.js
+-a----         6/17/2022   3:54 PM             29 yulu.js
+
+
+PS C:\Users\HP\Desktop\pp> git add .
+PS C:\Users\HP\Desktop\pp> git yulu.js
+git: 'yulu.js' is not a git command. See 'git --help'.
+PS C:\Users\HP\Desktop\pp> git add yulu.js
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   appp.js
+        new file:   print.js
+        new file:   yulu.js
+
+PS C:\Users\HP\Desktop\pp> git add yulu.js
+On branch master
+
+No commits yet
+
+        new file:   appp.js
+        new file:   print.js
+        new file:   yulu.js
+
+PS C:\Users\HP\Desktop\pp> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pp> git add .
+On branch master
+
+No commits yet
+
+Changes to be committed:
+        new file:   appp.js
+        new file:   yulu.js
+PS C:\Users\HP\Desktop\pp> git commit -m "added file"
+[master (root-commit) 7967819] added file
+ create mode 100644 appp.js
+ create mode 100644 print.js
+ create mode 100644 yulu.js
+PS C:\Users\HP\Desktop\pp> node yulu.js
+yulu bike
+PS C:\Users\HP\Desktop\pp> node .\yulu.js
+yulu bike
+PS C:\Users\HP\Desktop\pp> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> ls      
+
+
+
+----                 -------------         ------ ----
+-a----         6/17/2022   2:51 PM             35 print.js
+-a----         6/17/2022   3:54 PM             29 yulu.js
+
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> node yulu.js
+yulu bike
+PS C:\Users\HP\Desktop\pp> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> git init
+Reinitialized existing Git repository in C:/Users/HP/Desktop/pp/.git/
+PS C:\Users\HP\Desktop\pp> cd ..
+PS C:\Users\HP\Desktop> ls
+
+
+    Directory: C:\Users\HP\Desktop
+
+----                 -------------         ------ ----
+d-----         6/17/2022   1:29 PM                pavan
+d-----         6/17/2022   4:08 PM                pp
+-a----         6/17/2022   2:42 PM             31 appp.js
+-a----         6/16/2022  11:01 AM           2188 Slack.lnk
+-a----         6/16/2022   8:48 PM             80 test1.js
+-a----         6/16/2022   4:58 PM           1391 Visual Studio Code.lnk
+
+
+PS C:\Users\HP\Desktop> cd pp
+PS C:\Users\HP\Desktop\pp> ls
+
+
+
+----                 -------------         ------ ----
+-a----         6/17/2022   2:43 PM             31 appp.js
+-a----         6/17/2022   2:51 PM             35 print.js
+-a----         6/17/2022   3:54 PM             29 yulu.js
+On branch master
+nothing to commit, working tree clean
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pp> git add yulu.js
+PS C:\Users\HP\Desktop\pp> git remote -v  
+PS C:\Users\HP\Desktop\pp> git add yulu.js
+PS C:\Users\HP\Desktop\pp> git status     
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> ~/blogger$ ls
+~/blogger$ : The term '~/blogger$' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included,  
+verify that the path is correct and try again.
+At line:1 char:1
++ ~/blogger$ ls
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (~/blogger$:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\HP\Desktop\pp> ls
+
+    Directory: C:\Users\HP\Desktop\pp
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/17/2022   2:43 PM             31 appp.js
+-a----         6/17/2022   2:51 PM             35 print.js
+-a----         6/17/2022   3:54 PM             29 yulu.js
+
+
+PS C:\Users\HP\Desktop\pp> git commit -m "added console fille"
+On branch master
+PS C:\Users\HP\Desktop\pp> git push
+Either specify the URL from the command-line or configure a remote repository using
+    git remote add <name> <url>
+and then push using the remote name
+
+
+PS C:\Users\HP\Desktop\pp> git checkout origin
+error: pathspec 'origin' did not match any file(s) known to git
+* master
+On branch master
+nothing to commit, working tree clean
+* master
+PS C:\Users\HP\Desktop\pp> git branch yulu.js
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> git branch yulu.js
+fatal: a branch named 'yulu.js' already exists
+PS C:\Users\HP\Desktop\pp> git branch -v
+On branch master
+nothing to commit, working tree clean
+commit 796781915d4112a37879e56cda8f1a05ab512036 (HEAD -> master, yulu.js)
+Author: pavan <pavan.kumar@yulu.bike>
+
+    added file
+PS C:\Users\HP\Desktop\pp> git reset
+PS C:\Users\HP\Desktop\pp> git reset
+PS C:\Users\HP\Desktop\pp> git status
+On branch master
+nothing to commit, working tree clean
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   yulu.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\HP\Desktop\pp> history
+
+  Id CommandLine
+  -- -----------
+   1 cd pp
+   2 clear
+   3 pwd
+   4 ls
+   5 cd Destop
+   6 Desktop
+   7 pwd
+   8 cd
+   9 /../pp
+  10 ..\pavan\form
+  11 clear
+  12 ls
+  13 cd downloads
+  14 cd ..
+  15 cd Desktop
+  16 ls
+  17 cd pp
+  18 ls
+  19 cd yulu.js
+  20 cd pp
+  21 git remote -v
+  22 git status
+  23 ls
+  24 git add yulu.js
+  25 git add .
+  26 git add appp.js
+  27 cd ..
+  28 cd pp
+  29 git remote -v
+  30 git branch
+  31 git init
+  32 ls
+  33 git add .
+  34 git yulu.js
+  35 git add yulu.js
+  36 git status
+  37 git add yulu.js
+  38 git status
+  39 git add.
+  40 git add .
+  41 git status
+  42 git commit -m "added file"
+  43 node yulu.js
+  44 node .\yulu.js
+  45 git status
+  46 ls
+  47 git add yulu.js
+  48 git status
+  49 node yulu.js
+  50 git status
+  51 git init
+  52 cd ..
+  53 ls
+  54 cd pp
+  55 ls
+  56 git remote -v
+  57 git status
+  58 git add.
+  59 git add yulu.js
+  60 git remote -v
+  61 git add yulu.js
+  62 git status
+  63 ~/blogger$ ls
+  64 ls
+  65 git commit -m "added console fille"
+  66 git push
+  67 git checkout main
+  68 git checkout origin
+  69 git branch
+  70 git status
+  71 git branch
+  72 git branch yulu.js
+  73 git status
+  74 git branch yulu.js
+  75 git branch -v
+  76 git status
+  77 git log
+  78 git reset
+  79 git reset
+  80 git status
+  81 git status
+  82 git status
+
+
+PS C:\Users\HP\Desktop\pp>
+
+
+
+
+
+
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\HP\Desktop\pavan> cd form
+PS C:\Users\HP\Desktop\pavan\form> git remote -v
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pavan.js
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP\Desktop\pavan\form> git add .
+PS C:\Users\HP\Desktop\pavan\form> git status
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   pavan.js
+
+PS C:\Users\HP\Desktop\pavan\form> git commit -m " added new file"
+[main d905ce2]  added new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pavan7259/form.git
+   6f08d69..d905ce2  main -> main
+PS C:\Users\HP\Desktop\pavan\form> git add pavan.js
+PS C:\Users\HP\Desktop\pavan\form> git commit -m "added console log"
+ 1 file changed, 1 insertion(+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pavan7259/form.git
+PS C:\Users\HP\Desktop\pavan\form> git checkout -b login
+Switched to a new branch 'login'
+PS C:\Users\HP\Desktop\pavan\form> git branch
+* login
+  main
+PS C:\Users\HP\Desktop\pavan\form> git add .
+PS C:\Users\HP\Desktop\pavan\form> git commit -m "added login file"
+[login 3170d1a] added login file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login.js
+PS C:\Users\HP\Desktop\pavan\form> git push origin login
+Enumerating objects: 4, done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'login' on GitHub by visiting:
+remote:      https://github.com/pavan7259/form/pull/new/login
+remote:
+To https://github.com/pavan7259/form.git
+ * [new branch]      login -> login
+PS C:\Users\HP\Desktop\pavan\form> history
+
+  Id CommandLine
+  -- -----------
+   1 cd form
+   2 git remote -v
+   3 git status
+   4 git add .
+   5 git status
+   6 git commit -m " added new file"
+   7 git push origin main
+   8 git add pavan.js
+   9 git commit -m "added console log"
+  10 git push origin main
+  11 git checkout -b login
+  12 git branch
+  13 git add .
+  14 git commit -m "added login file"
+  15 git push origin login
+
+
+PS C:\Users\HP\Desktop\pavan\form> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\HP\Desktop\pavan\form> history
+
+  Id CommandLine
+   1 cd form
+   2 git remote -v
+   3 git status
+   4 git add .
+   5 git status
+   6 git commit -m " added new file"
+   7 git push origin main
+  10 git push origin main
+  11 git checkout -b login
+  12 git branch
+  13 git add .
+  14 git commit -m "added login file"
+  15 git push origin login
+  16 history
+
+PS C:\Users\HP\Desktop\pavan\form> cd log.js
+cd : Cannot find path 'log.js' because it does not exist.
+At line:1 char:1
++ cd log.js
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (log.js:String) [Set-Location], ItemNotFoundException
+ 
+PS C:\Users\HP\Desktop\pavan\form> cd
+PS C:\Users\HP\Desktop\pavan\form> cd log.js
+cd : Cannot find path 'log.js' because it does not exist.
+At line:1 char:1
++ cd log.js
++ ~~~~~~~~~
+PS C:\Users\HP\Desktop\pavan\form> cd form
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\form' because it does not exist.
+At line:1 char:1
++ cd form
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\form:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\pavan' because it does not exist.
+At line:1 char:1
++ cd pavan
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\pavan:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form>
+PS C:\Users\HP\Desktop\pavan\form> git add log.js
+PS C:\Users\HP\Desktop\pavan\form> cd log.js
+At line:1 char:1
++ cd log.js
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (log.js:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form> git add log.js
+PS C:\Users\HP\Desktop\pavan\form> git status
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+        new file:   log.js
+
+PS C:\Users\HP\Desktop\pavan\form> git remote -v
+origin  https://github.com/pavan7259/form.git (fetch)
+origin  https://github.com/pavan7259/form.git (push)
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log.js
+
+PS C:\Users\HP\Desktop\pavan\form> git add.
+git: 'add.' is not a git command. See 'git --help'.
+        add
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+PS C:\Users\HP\Desktop\pavan\form> cd form
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\form' because it does not exist.
++ cd form
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\form:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form> git add log.js
+PS C:\Users\HP\Desktop\pavan\form> git status
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   log.js
+
+[main 371899e] added file
+ create mode 100644 log.js
+PS C:\Users\HP\Desktop\pavan\form> git push origin main
+To https://github.com/pavan7259/form.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pavan7259/form.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\HP\Desktop\pavan\form> git push origin
+To https://github.com/pavan7259/form.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pavan7259/form.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+PS C:\Users\HP\Desktop\pavan\form> git push origin login
+Everything up-to-date
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+and have 1 and 2 different commits each, respectively.
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pavan\form>
+PS C:\Users\HP\Desktop\pavan\form> cd pp
+At line:1 char:1
++ cd pp
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\pp:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form> cd 
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pavan\form> git add appp.js
+fatal: pathspec 'appp.js' did not match any files
+PS C:\Users\HP\Desktop\pavan\form> git cd pp
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pavan\form> cd pp
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\pp' because it does not exist.
+At line:1 char:1
++ cd pp
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\pp:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form> cd destop
+At line:1 char:1
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\destop:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\c' because it does not exist.
++ cd c
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\HP\Desktop\pavan\form> git cd pp
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pavan\form> git add pp
+fatal: pathspec 'pp' did not match any files
+PS C:\Users\HP\Desktop\pavan\form> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pavan\form> git add appp.js
+fatal: pathspec 'appp.js' did not match any files
+PS C:\Users\HP\Desktop\pavan\form> git add appp   
+fatal: pathspec 'appp' did not match any files
+PS C:\Users\HP\Desktop\pavan\form>
+PS C:\Users\HP\Desktop\pavan\form> git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+PS C:\Users\HP\Desktop\pavan\form> git checkout main
+Already on 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+PS C:\Users\HP\Desktop\pavan\form> git checkout origin
+Note: switching to 'origin'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 65cee99 Merge pull request #1 from pavan7259/login
+PS C:\Users\HP\Desktop\pavan\form> git checkout main  
+Previous HEAD position was 65cee99 Merge pull request #1 from pavan7259/login
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pavan\form> git pull
+Merge made by the 'ort' strategy.
+ login.js | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login.js
+PS C:\Users\HP\Desktop\pavan\form> 
+
+
+
+
+
+
+
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\HP\Desktop\pavan\first-app>
+
+ Session contents restored from 6/17/2022 at 12:49:45 PM 
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\HP\Desktop\pavan\first-app> 
+
+ Session contents restored from 6/17/2022 at 1:02:46 PM 
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.   
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        add2numbers.html
+        test.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP\Desktop\pavan\first-app> git add add2numbers.html
+PS C:\Users\HP\Desktop\pavan\first-app> git status
+On branch master
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   add2numbers.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.js
+
+PS C:\Users\HP\Desktop\pavan\first-app> git commit -m "added file "
+Author identity unknown
+
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-CB11JIB.(none)')
+PS C:\Users\HP\Desktop\pavan\first-app> git config --global user.email "pavan.kumar@yulu.bike"   
+PS C:\Users\HP\Desktop\pavan\first-app> git commit -m "added file"
+[master (root-commit) e693c2b] added file
+ 1 file changed, 15 insertions(+)
+ create mode 100644 add2numbers.html
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+pavan   https://github.com/pavan7259/test1 (fetch)
+pavan   https://github.com/pavan7259/test1 (push)
+pavan2  git@github.com:pavan7259/test2.git (fetch)
+pavan2  git@github.com:pavan7259/test2.git (push)
+PS C:\Users\HP\Desktop\pavan\first-app> git push origin master
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\HP\Desktop\pavan\first-app> git push  master      
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\HP\Desktop\pavan\first-app> cd ..
+PS C:\Users\HP\Desktop\pavan> ls
+
+
+    Directory: C:\Users\HP\Desktop\pavan
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/17/2022   1:10 PM                first-app
+-a----         6/17/2022  11:59 AM            276 3no.js
+-a----         6/17/2022  12:08 PM            216 add2numbers.html
+-a----         6/16/2022   4:30 PM           2779 angularform.html
+-a----         6/17/2022  11:53 AM            388 html2no.html
+-a----         6/17/2022  12:37 PM             67 test1.js
+
+
+
+
+    Directory: C:\Users\HP\Desktop\pavan\form
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/17/2022   1:16 PM              6 README.md
+
+
+PS C:\Users\HP\Desktop\pavan\form> ls
+
+    Directory: C:\Users\HP\Desktop\pavan\form
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/17/2022   2:12 PM             27 log.js
+-a----         6/17/2022   1:16 PM              6 README.md
+
+
+PS C:\Users\HP\Desktop\pavan\form> git status
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pavan\form> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+        add
+PS C:\Users\HP\Desktop\pavan\form> cd .\form\history
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\form\history' because it does not exist.   
+At line:1 char:1
++ cd .\form\history
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Des...rm\form\history:String) [Set-L  
+   ocation], ItemNotFoundException
+PS C:\Users\HP\Desktop\pavan\form> cd form
+cd : Cannot find path 'C:\Users\HP\Desktop\pavan\form\form' because it does not exist.
+At line:1 char:1
++ cd form
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\Desktop\pavan\form\form:String) [Set  
+   -Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand      
+ 
+PS C:\Users\HP\Desktop\pavan\form> git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\HP\Desktop\pavan\form> git add.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pavan\form> git commit -m "log in"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+PS C:\Users\HP\Desktop\pavan\form> get push origin login
+get : The term 'get' is not recognized as the name of a cmdlet, function, script file, or        
+operable program. Check the spelling of the name, or if a path was included, verify that the     
+path is correct and try again.
+At line:1 char:1
++ get push origin login
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\HP\Desktop\pavan\form> history
+
+  Id CommandLine
+  -- -----------
+   1 git status
+   2 git add add2numbers.html
+   3 git status
+   4 git commit -m "added file "
+   5 git config --global user.email "pavan.kumar@yulu.bike"
+   6  git config --global user.name "pavan"
+   7 git commit -m "added file"
+   8 git push origin master
+   9 git remote -v
+  10 git push origin master
+  11 git push  master
+  12 cd ..
+  13 ls
+  14 https://github.com/pavan7259/form.git
+  15 clear
+  16 git clone https://github.com/pavan7259/form.git
+  17 cd .\form\
+  18 clear
+  19 ls
+  20 ls
+  23 cd .\form\history
+  24 cd form
+  25 git add pavan.js
+  26 git ststus
+  27 git add.
+  28 git commit -m "log in"
+
+PS C:\Users\HP\Desktop\pavan\form> git add log.js
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pavan\form> git add pavan.js
+PS C:\Users\HP\Desktop\pavan\form> git status
+On branch main
+Your branch and 'origin/main' have diverged,
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pavan\form> pwd
+
+Path
+----
+
+PS C:\Users\HP\Desktop\pavan\form> cd ..
+PS C:\Users\HP\Desktop\pavan> pwd
+
+Path
+----
+C:\Users\HP\Desktop\pavan
+
+
+PS C:\Users\HP\Desktop\pavan> cd ..
+PS C:\Users\HP\Desktop> ls
+
+
+    Directory: C:\Users\HP\Desktop
+
+----                 -------------         ------ ----
+d-----         6/17/2022   1:29 PM                pavan
+d-----         6/17/2022   2:50 PM                pp
+-a----         6/17/2022   2:42 PM             31 appp.js
+-a----         6/16/2022  11:01 AM           2188 Slack.lnk
+-a----         6/16/2022   8:48 PM             80 test1.js
+PS C:\Users\HP\Desktop> cd pp
+PS C:\Users\HP\Desktop\pp> pwd
+
+Path
+----
+C:\Users\HP\Desktop\pp
+
+
+PS C:\Users\HP\Desktop\pp> cd ..\pavan\form\
+PS C:\Users\HP\Desktop\pavan\form> cd ../../pp
+PS C:\Users\HP\Desktop\pp> ls      
+
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/17/2022   2:51 PM             35 print.js
+
+
+PS C:\Users\HP\Desktop\pp> git add appp.js
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\HP\Desktop\pp> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\Desktop\pp> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\pp> 

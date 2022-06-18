@@ -1,0 +1,17 @@
+  1 cd form
+   2 git remote -v
+   3 git status
+   4 git add .
+   5 git status
+   6 git commit -m " added new file"
+   7 git push origin main
+   8 git add pavan.js
+   9 git commit -m "added console log"
+  10 git push origin main
+  11 git checkout -b login
+  12 git branch
+  13 git add .
+  14 git commit -m "added login file"
+  15 git push origin login
+  16 history
+  17 git checkout main
